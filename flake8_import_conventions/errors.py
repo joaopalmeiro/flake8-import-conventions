@@ -8,9 +8,9 @@ def generate_message(number: int, package_name: str, alias: str) -> str:
     return f"IC{pad_number} {package_name} should be imported as `{import_convention}`."
 
 
-name_asname: Dict[str, str] = {"pandas": "pd"}
+name2asname: Dict[str, str] = {"pandas": "pd"}
 
-name_message: Dict[str, str] = {
+name2message: Dict[str, str] = {
     key: generate_message(idx + 1, key, value)
-    for idx, (key, value) in enumerate(name_asname.items())
+    for idx, (key, value) in enumerate(name2asname.items())
 }
