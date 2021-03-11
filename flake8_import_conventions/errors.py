@@ -8,10 +8,11 @@ def generate_message(number: int, package_name: str, alias: str) -> str:
     return f"IC{pad_number} {package_name} should be imported as `{import_convention}`"
 
 
+# Alphabetical order
 name2asname: Dict[str, str] = {
-    "pandas": "pd",
-    "numpy": "np",
     "altair": "alt",
+    "numpy": "np",
+    "pandas": "pd",
     "seaborn": "sns",
 }
 
