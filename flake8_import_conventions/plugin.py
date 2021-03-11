@@ -7,7 +7,8 @@ from .visitor import Visitor
 
 # Based on: https://github.com/asottile/flake8-2020/blob/master/flake8_2020.py#L160
 class Plugin:
-    name = __name__
+    # name = __name__
+    name = __name__.replace("_", "-")
     version = __version__
 
     def __init__(self, tree: ast.AST) -> None:
