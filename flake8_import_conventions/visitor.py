@@ -24,4 +24,5 @@ class Visitor(ast.NodeVisitor):
     # More info: https://docs.python.org/3/library/ast.html#ast.Import
     def visit_Import(self, node: ast.Import) -> None:
         # Called for `import ..` and `import .. as ..` nodes
-        pass
+        self.generic_visit(node)  # Continue checking children
+        self.errors.extend(check_import_name(node))

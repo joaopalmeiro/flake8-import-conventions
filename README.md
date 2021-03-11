@@ -7,6 +7,8 @@ It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) and [`f
 ## References
 
 - Anthony Sottile's "[a flake8 plugin from scratch (intermediate) anthony explains #025](https://youtu.be/ot5Z4KQPBL8)" tutorial.
+- [flake8-pie](https://github.com/sbdchd/flake8-pie).
+- [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide).
 
 ## Notes
 

@@ -4,6 +4,8 @@ version = "0.0.1"
 description = "An opinionated plugin for Flake8 on how certain packages should be imported or aliased."
 authors = ["João Palmeiro <joaommpalmeiro@gmail.com>"]
 license = "MIT"
+readme = "README.md"
+keywords = ["flake8", "linter", "qa", "import"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
@@ -12,6 +14,10 @@ flake8 = "^3.0.0"
 attrs = "^20.3.0"
 
 [tool.poetry.dev-dependencies]
+
+# More info: https://python-poetry.org/docs/pyproject/#plugins
+[tool.poetry.plugins."flake8.extension"]
+IC = "flake8_import_conventions.plugin:Plugin"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
