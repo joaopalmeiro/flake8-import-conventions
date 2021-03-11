@@ -14,7 +14,10 @@ It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) and [`f
 - [astpretty](https://github.com/asottile/astpretty).
 - [babi](https://github.com/asottile/babi) (text editor).
 - `self.generic_visit(node)`: call it at the end of each `visit_*` method for the recursion to continue.
-- [attrs](https://www.attrs.org/): classes Without Boilerplate.
+- [attrs](https://www.attrs.org/):
+  - "Classes without boilerplate".
+  - No need to implement object protocols (dunder methods).
+  - "It does _nothing_ dynamic at runtime, hence zero runtime overhead."
 
 **Minimal boilerplate for the `Plugin` class**:
 
@@ -36,4 +39,14 @@ class Plugin:
         # Tuple[line number, character offset, message]
         # Type[Any] is not being used (use `type(self)`)
         pass
+```
+
+**Syntactic sugar for `attr.ib(default=attr.Factory(f))`**:
+
+```python
+@attr.s
+class C(object):
+    x = attr.ib(factory=list)
+    # instead of
+    # x = attr.ib(default=attr.Factory(list))
 ```
