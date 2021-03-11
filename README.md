@@ -26,6 +26,7 @@ It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) and [`f
 - `flake8 formatter.py flake8_import_conventions --jobs 1`.
 - `poetry install --no-root` (don't install _this_ package).
 - `import typing as t` ([flake8-annotations](https://github.com/sco1/flake8-annotations)).
+- `import geopandas` ([source](https://github.com/geopandas/geopandas/issues/716)).
 
 **Minimal boilerplate for the `Plugin` class**:
 
