@@ -23,6 +23,7 @@ It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) and [`f
   - `__attrs_post_init__` method.
 - [Dict vs. slotted classes](https://www.attrs.org/en/stable/glossary.html).
 - `poetry add flake8@^3.0.0 attrs`.
+- `flake8 formatter.py flake8_import_conventions --jobs 1`.
 
 **Minimal boilerplate for the `Plugin` class**:
 
