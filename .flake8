@@ -11,3 +11,9 @@ extend-ignore =
 per-file-ignores =
     # `module` imported but unused
     __init__.py: F401
+exclude =
+    .git,
+    __pycache__,
+    dist,
+    build,
+    .venv
