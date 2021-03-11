@@ -5,7 +5,7 @@ description = "An opinionated plugin for Flake8 on how certain packages should b
 authors = ["João Palmeiro <joaommpalmeiro@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-keywords = ["flake8", "linter", "qa", "import"]
+keywords = ["flake8", "linter", "qa", "import", "flake8-plugin", "code quality"]
 
 [tool.poetry.dependencies]
 python = "^3.6"

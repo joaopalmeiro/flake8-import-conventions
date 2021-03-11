@@ -6,7 +6,8 @@ import attr
 from .errors import name2asname, name2message
 
 
-# Based on: https://github.com/deppen8/pandas-vet/blob/master/pandas_vet/__init__.py#L132
+# Based on:
+# - https://github.com/deppen8/pandas-vet/blob/master/pandas_vet/__init__.py#L132
 def check_import_name(node: ast.Import) -> List[Tuple[int, int, str]]:
     errors = []
 
