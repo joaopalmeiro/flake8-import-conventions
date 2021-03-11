@@ -2,7 +2,7 @@
 
 An opinionated plugin for Flake8 on how certain packages should be imported or aliased.
 
-It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) plugin.
+It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) and [`flake8-2020`](https://github.com/asottile/flake8-2020) plugins.
 
 ## References
 
@@ -14,6 +14,7 @@ It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) plugin.
 - [astpretty](https://github.com/asottile/astpretty).
 - [babi](https://github.com/asottile/babi) (text editor).
 - `self.generic_visit(node)`: call it at the end of each `visit_*` method for the recursion to continue.
+- [attrs](https://www.attrs.org/): classes Without Boilerplate.
 
 **Minimal boilerplate for the `Plugin` class**:
 
