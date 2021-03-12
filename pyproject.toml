@@ -18,6 +18,7 @@ black = "^20.8b1"
 bandit = "^1.7.0"
 isort = "^5.7.0"
 flake8 = "^3.0.0"
+pytest = "^6.2.2"
 
 [tool.poetry.plugins."flake8.extension"]
 IC = "flake8_import_conventions:Plugin"
