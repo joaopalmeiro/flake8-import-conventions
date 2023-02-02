@@ -1,4 +1,7 @@
 {
+  "git.enabled": true,
+  "files.autoSave": "off",
+
   "editor.formatOnSave": true,
 
   "python.formatting.provider": "black",
@@ -9,7 +12,10 @@
 
   "python.linting.mypyEnabled": true,
 
+  // https://github.com/microsoft/vscode-python/issues/14150
+  // https://bandit.readthedocs.io/en/latest/config.html
   "python.linting.banditEnabled": true,
+  "python.linting.banditArgs": ["-c", "${workspaceFolder}/bandit.yaml"],
 
   "[python]": {
     "editor.codeActionsOnSave": {
@@ -18,5 +24,6 @@
     "editor.rulers": [88]
   },
 
-  "python.pythonPath": "${workspaceFolder}/.venv/bin/python"
+  // https://stackoverflow.com/a/67551631
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
 }

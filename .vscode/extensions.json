@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "ms-vscode-remote.remote-wsl",
+    "ms-python.python",
+    "tamasfe.even-better-toml",
+    "editorconfig.editorconfig"
+  ]
+}

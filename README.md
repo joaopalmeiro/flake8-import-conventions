@@ -4,6 +4,28 @@ An opinionated plugin for Flake8 on how certain packages should be imported or a
 
 It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) and [`flake8-2020`](https://github.com/asottile/flake8-2020) plugins.
 
+## Development
+
+```bash
+poetry install --with dev
+```
+
+```bash
+poetry shell
+```
+
+Open the `manual_test.py` file in VS Code to see the error messages.
+
+```bash
+pytest tests/ -v
+```
+
+or (to see `print()`s)
+
+```bash
+pytest tests/ -v -s
+```
+
 ## References
 
 - Anthony Sottile's "[a flake8 plugin from scratch (intermediate) anthony explains #025](https://youtu.be/ot5Z4KQPBL8)" tutorial.
@@ -27,6 +49,21 @@ It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) and [`f
 - `poetry install --no-root` (don't install _this_ package).
 - `import typing as t` ([flake8-annotations](https://github.com/sco1/flake8-annotations)).
 - `import geopandas` ([source](https://github.com/geopandas/geopandas/issues/716)).
+- https://github.com/asottile/flake8-2020/commit/10ba36520cca00ecbc812b2b96fcaaf9f8999c06
+- Poetry:
+  - https://python-poetry.org/docs/#installing-with-the-official-installer
+  - `poetry --version` (1.3.2)
+  - `poetry init` (https://python-poetry.org/docs/basic-usage/#initialising-a-pre-existing-project)
+  - https://python-poetry.org/docs/dependency-specification/#exact-requirements
+  - `poetry add attrs`
+  - `poetry add mypy black bandit pytest --group dev`
+  - `poetry add isort@^5.11.5 --group dev` or `poetry add isort --group dev --allow-prereleases` (https://github.com/PyCQA/isort/issues/2084 + https://pypi.org/project/isort/6.0.0b2/#history + https://github.com/PyCQA/isort/issues/2083)
+  - `flake8 = ">=5"` (https://github.com/asottile/flake8-2020/blob/v1.7.0/setup.cfg#L25)
+  - https://python-poetry.org/docs/cli/#add (_Allow >=2.0.5 versions, without upper bound_)
+  - `poetry config virtualenvs.in-project true --local`
+  - `poetry env remove --all`
+  - `poetry config --list`
+- https://www.attrs.org/en/latest/index.html#getting-started
 
 **Minimal boilerplate for the `Plugin` class**:
 

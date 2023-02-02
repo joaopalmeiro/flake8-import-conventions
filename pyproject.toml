@@ -2,27 +2,27 @@
 name = "flake8-import-conventions"
 version = "0.0.1"
 description = "An opinionated plugin for Flake8 on how certain packages should be imported or aliased."
-authors = ["João Palmeiro <joaommpalmeiro@gmail.com>"]
+authors = ["João Palmeiro <joaopalmeiro@proton.me>"]
 license = "MIT"
 readme = "README.md"
 keywords = ["flake8", "linter", "qa", "import", "flake8-plugin", "code quality"]
+packages = [{ include = "flake8_import_conventions" }]
 
 [tool.poetry.dependencies]
-python = "^3.6"
-importlib-metadata = {version = "^3.0", python = "<3.8"}
-attrs = "^20.3.0"
+python = "^3.7"
+flake8 = ">=5"
+attrs = "^22.2.0"
 
-[tool.poetry.dev-dependencies]
-mypy = "^0.812"
-black = "^20.8b1"
-bandit = "^1.7.0"
-isort = "^5.7.0"
-flake8 = "^3.0.0"
-pytest = "^6.2.2"
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+black = "^23.1.0"
+bandit = "^1.7.4"
+pytest = "^7.2.1"
+isort = "^5.11.5"
 
 [tool.poetry.plugins."flake8.extension"]
 IC = "flake8_import_conventions:Plugin"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

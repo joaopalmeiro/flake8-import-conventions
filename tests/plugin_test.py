@@ -7,7 +7,7 @@ from flake8_import_conventions import Plugin
 
 def results(s):
     # Based on:
-    # - https://github.com/asottile/flake8-2020/blob/master/tests/flake8_2020_test.py
+    # - https://github.com/asottile/flake8-2020/blob/v1.7.0/tests/flake8_2020_test.py
 
     # lineno: starts at 1.
     # col_offset: starts at 0.
