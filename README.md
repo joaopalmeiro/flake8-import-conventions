@@ -26,6 +26,34 @@ or (to see `print()`s)
 pytest tests/ -v -s
 ```
 
+## Deployment
+
+```bash
+poetry check
+```
+
+```bash
+poetry version minor
+```
+
+or
+
+```bash
+poetry version patch
+```
+
+```bash
+git tag
+```
+
+```bash
+git tag "v$(poetry version --short)"
+```
+
+```bash
+git push --follow-tags
+```
+
 ## References
 
 - Anthony Sottile's "[a flake8 plugin from scratch (intermediate) anthony explains #025](https://youtu.be/ot5Z4KQPBL8)" tutorial.
