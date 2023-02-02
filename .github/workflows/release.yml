@@ -1,0 +1,40 @@
+# https://github.com/joaopalmeiro/linstall/blob/main/.github/workflows/release.yml
+# https://github.com/joaopalmeiro/vscode-icons-octicons/blob/main/.github/workflows/release.yml
+# https://github.com/joaopalmeiro/cloack/blob/main/.github/actions/python-poetry-env/action.yml
+# https://github.com/joaopalmeiro/cloack/blob/main/.github/workflows/release.yml
+# https://github.com/snok/install-poetry
+# https://python-poetry.org/docs/#installing-with-the-official-installer
+
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.7"
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 - --version 1.3.2
+          poetry --version
+
+      - name: Create virtual environment
+        run: |
+          poetry install
+          poetry env info
+
+      - name: Build and publish to PyPI
+        run: |
+          poetry config pypi-token.pypi ${{ secrets.PYPI_API_TOKEN }}
+          poetry publish --build --no-interaction
