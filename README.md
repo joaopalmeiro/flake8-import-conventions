@@ -4,6 +4,14 @@ An opinionated plugin for Flake8 on how certain packages should be imported or a
 
 It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) and [`flake8-2020`](https://github.com/asottile/flake8-2020) plugins.
 
+## Installation
+
+Via [Pipenv](https://pipenv.pypa.io/):
+
+```bash
+pipenv install --dev flake8 flake8-import-conventions
+```
+
 ## Development
 
 ```bash
