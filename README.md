@@ -101,6 +101,7 @@ git push origin "v$(poetry version --short)"
   - `poetry config --list`
 - https://www.attrs.org/en/latest/index.html#getting-started
 - Delete local tag: `git tag -d v0.0.1`
+- `import seaborn as sns`: https://seaborn.pydata.org/installing.html
 
 **Minimal boilerplate for the `Plugin` class**:
 
