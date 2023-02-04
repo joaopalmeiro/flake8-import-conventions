@@ -29,6 +29,7 @@
   - `poetry config virtualenvs.in-project true --local`
   - `poetry env remove --all`
   - `poetry config --list`
+  - https://python-poetry.org/docs/pyproject/#classifiers
 - https://www.attrs.org/en/latest/index.html#getting-started
 - Delete local tag: `git tag -d v0.0.1`
 - `import seaborn as sns`: https://seaborn.pydata.org/installing.html
