@@ -6,6 +6,11 @@
 # Via terminal: poetry shell + flake8 manual_test.py
 
 import altair
+import altair as altr
+import geopandas as gpd
 import numpy
+import numpy as npm
 import pandas
+import pandas as pds
 import seaborn
+import seaborn as sbn

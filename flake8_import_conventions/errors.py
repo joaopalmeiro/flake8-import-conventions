@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, Optional
 
 
 def generate_code(number: int) -> str:
@@ -7,22 +7,27 @@ def generate_code(number: int) -> str:
     return f"IC{pad_number}"
 
 
-def generate_description(package_name: str, alias: str) -> str:
-    import_convention = f"import {package_name} as {alias}"
+def generate_description(package_name: str, alias: Optional[str]) -> str:
+    import_convention = (
+        f"import {package_name} as {alias}" if alias else f"import {package_name}"
+    )
 
     return f"{package_name} should be imported as `{import_convention}`"
 
 
-def generate_message(number: int, package_name: str, alias: str) -> str:
+def generate_message(number: int, package_name: str, alias: Optional[str]) -> str:
     code = generate_code(number)
     description = generate_description(package_name, alias)
 
     return f"{code} {description}"
 
 
-# Alphabetical order
-name2asname: Dict[str, str] = {
+# https://github.com/charliermarsh/ruff/blob/v0.0.241/src/rules/flake8_import_conventions/settings.rs
+# https://github.com/geopandas/geopandas/issues/716
+# Alphabetical order:
+name2asname: Dict[str, Optional[str]] = {
     "altair": "alt",
+    "geopandas": None,
     "numpy": "np",
     "pandas": "pd",
     "seaborn": "sns",

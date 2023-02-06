@@ -19,9 +19,10 @@ pipenv install --dev flake8 flake8-import-conventions
 | Package                                 | Code  | Description                                           |
 | --------------------------------------- | ----- | ----------------------------------------------------- |
 | [Altair](https://altair-viz.github.io/) | IC001 | altair should be imported as `import altair as alt`   |
-| [NumPy](https://numpy.org/)             | IC002 | numpy should be imported as `import numpy as np`      |
-| [pandas](https://pandas.pydata.org/)    | IC003 | pandas should be imported as `import pandas as pd`    |
-| [seaborn](https://seaborn.pydata.org/)  | IC004 | seaborn should be imported as `import seaborn as sns` |
+| [GeoPandas](https://geopandas.org/)     | IC002 | geopandas should be imported as `import geopandas`    |
+| [NumPy](https://numpy.org/)             | IC003 | numpy should be imported as `import numpy as np`      |
+| [pandas](https://pandas.pydata.org/)    | IC004 | pandas should be imported as `import pandas as pd`    |
+| [seaborn](https://seaborn.pydata.org/)  | IC005 | seaborn should be imported as `import seaborn as sns` |
 
 ## Development
 

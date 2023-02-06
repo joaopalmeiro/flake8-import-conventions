@@ -19,6 +19,7 @@ def results(s):
     (
         "",
         "import altair as alt",
+        "import geopandas",
         "import numpy as np",
         "import pandas as pd",
         "import seaborn as sns",
@@ -39,13 +40,24 @@ def test_import_altair(s):
     }
 
 
+# GeoPandas
+@pytest.mark.parametrize(
+    "s",
+    ("import geopandas as gpd", "import geopandas as geopd"),
+)
+def test_import_geopandas(s):
+    assert results(s) == {
+        "1:0: IC002 geopandas should be imported as `import geopandas`"
+    }
+
+
 # NumPy
 @pytest.mark.parametrize(
     "s",
     ("import numpy", "import numpy as npp", "import numpy as Np"),
 )
 def test_import_numpy(s):
-    assert results(s) == {"1:0: IC002 numpy should be imported as `import numpy as np`"}
+    assert results(s) == {"1:0: IC003 numpy should be imported as `import numpy as np`"}
 
 
 # pandas
@@ -55,16 +67,16 @@ def test_import_numpy(s):
 )
 def test_import_pandas(s):
     assert results(s) == {
-        "1:0: IC003 pandas should be imported as `import pandas as pd`"
+        "1:0: IC004 pandas should be imported as `import pandas as pd`"
     }
 
 
-# Seaborn
+# seaborn
 @pytest.mark.parametrize(
     "s",
     ("import seaborn", "import seaborn as snss", "import seaborn as Sns"),
 )
 def test_import_seaborn(s):
     assert results(s) == {
-        "1:0: IC004 seaborn should be imported as `import seaborn as sns`"
+        "1:0: IC005 seaborn should be imported as `import seaborn as sns`"
     }

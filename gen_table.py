@@ -16,12 +16,14 @@ def generate_link(text: str, url: str) -> str:
 # Follow the same order as in name2asname:
 name2stylized: Dict[str, str] = {
     "altair": "Altair",
+    "geopandas": "GeoPandas",
     "numpy": "NumPy",
     "pandas": "pandas",
     "seaborn": "seaborn",
 }
 name2url: Dict[str, str] = {
     "altair": "https://altair-viz.github.io/",
+    "geopandas": "https://geopandas.org/",
     "numpy": "https://numpy.org/",
     "pandas": "https://pandas.pydata.org/",
     "seaborn": "https://seaborn.pydata.org/",
