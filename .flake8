@@ -8,9 +8,14 @@ extend-ignore =
     W503,
     # Disable to avoid duplicate warnings with E722
     B001
+    # For manual testing:
+    # IC001,
+    # IC002,
+    # IC003,
+    # IC004
 per-file-ignores =
     # `module` imported but unused
-    __init__.py: F401
+    # __init__.py: F401
     manual_test.py: F401
 exclude =
     .git,

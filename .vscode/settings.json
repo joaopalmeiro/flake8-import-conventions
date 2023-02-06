@@ -8,6 +8,9 @@
 
   "python.linting.enabled": true,
   "python.linting.lintOnSave": true,
+
+  // https://code.visualstudio.com/docs/python/linting#_flake8
+  // https://code.visualstudio.com/docs/python/linting#_specific-linters
   "python.linting.flake8Enabled": true,
 
   "python.linting.mypyEnabled": true,
