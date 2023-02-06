@@ -46,6 +46,8 @@ or (to see `print()`s)
 pytest tests/ -v -s
 ```
 
+Copy the output of the following script and paste it in the [Flake8 codes](#flake8-codes) section:
+
 ```bash
 python gen_table.py
 ```
