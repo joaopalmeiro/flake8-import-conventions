@@ -513,6 +513,18 @@ importlib-metadata = {version = ">=1.7.0", markers = "python_version < \"3.8\""}
 pbr = ">=2.0.0,<2.1.0 || >2.1.0"
 
 [[package]]
+name = "tomark"
+version = "0.1.4"
+description = "Convert a list of dictionaries to a markdown formatted table."
+category = "dev"
+optional = false
+python-versions = "*"
+files = [
+    {file = "tomark-0.1.4-py3-none-any.whl", hash = "sha256:e0b18f3cc7e1d6312ec3efa5d032b2a48bd24b079a5e91439a37e27c9c9b1455"},
+    {file = "tomark-0.1.4.tar.gz", hash = "sha256:437f36f72621bdeb0897d655dd0f319520c39973977314b848de2491eaf2e740"},
+]
+
+[[package]]
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
@@ -589,4 +601,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.7"
-content-hash = "3e0e4fec737ed655b8aa87784d847f842f7b7a3f86fa3bceabfc274c46a85476"
+content-hash = "0ccef5907f3a757c89e3d84ea9220e634686e5b02a1e641e476f3af6c047681c"

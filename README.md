@@ -14,6 +14,15 @@ Via [Pipenv](https://pipenv.pypa.io/):
 pipenv install --dev flake8 flake8-import-conventions
 ```
 
+## Flake8 codes
+
+| Package                                 | Code  | Description                                           |
+| --------------------------------------- | ----- | ----------------------------------------------------- |
+| [Altair](https://altair-viz.github.io/) | IC001 | altair should be imported as `import altair as alt`   |
+| [NumPy](https://numpy.org/)             | IC002 | numpy should be imported as `import numpy as np`      |
+| [pandas](https://pandas.pydata.org/)    | IC003 | pandas should be imported as `import pandas as pd`    |
+| [seaborn](https://seaborn.pydata.org/)  | IC004 | seaborn should be imported as `import seaborn as sns` |
+
 ## Development
 
 ```bash
@@ -34,6 +43,10 @@ or (to see `print()`s)
 
 ```bash
 pytest tests/ -v -s
+```
+
+```bash
+python gen_table.py
 ```
 
 ## Deployment
