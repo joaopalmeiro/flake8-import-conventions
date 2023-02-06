@@ -2,6 +2,8 @@
 
 [![PyPI](https://img.shields.io/pypi/v/flake8-import-conventions.svg)](https://pypi.org/project/flake8-import-conventions/)
 
+<img alt="" src="assets/logo.png" style="border-radius: 50%;margin-left: auto; margin-right: auto; display: block;" width="100" height="100" />
+
 An opinionated plugin for Flake8 on how certain packages should be imported or aliased.
 
 It is based on the [`pandas-vet`](https://github.com/deppen8/pandas-vet) and [`flake8-2020`](https://github.com/asottile/flake8-2020) plugins.
