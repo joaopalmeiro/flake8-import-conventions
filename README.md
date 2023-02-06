@@ -3,7 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/flake8-import-conventions.svg)](https://pypi.org/project/flake8-import-conventions/)
 
 <p align="center">
-  <img alt="" src="https://raw.githubusercontent.com/joaopalmeiro/flake8-import-conventions/main/assets/logo.png" style="border-radius: 50%;" width="100" height="100" />
+  <img alt="" src="https://raw.githubusercontent.com/joaopalmeiro/flake8-import-conventions/main/assets/logo_rounded.png" width="100" height="100" />
 </p>
 
 An opinionated plugin for Flake8 on how certain packages should be imported or aliased.
