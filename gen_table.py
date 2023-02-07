@@ -17,6 +17,7 @@ def generate_link(text: str, url: str) -> str:
 name2stylized: Dict[str, str] = {
     "altair": "Altair",
     "geopandas": "GeoPandas",
+    "matplotlib.pyplot": "Matplotlib",
     "numpy": "NumPy",
     "pandas": "pandas",
     "plotly.express": "Plotly",
@@ -26,6 +27,7 @@ name2stylized: Dict[str, str] = {
 name2url: Dict[str, str] = {
     "altair": "https://altair-viz.github.io/",
     "geopandas": "https://geopandas.org/",
+    "matplotlib.pyplot": "https://matplotlib.org/",
     "numpy": "https://numpy.org/",
     "pandas": "https://pandas.pydata.org/",
     "plotly.express": "https://plotly.com/python/",

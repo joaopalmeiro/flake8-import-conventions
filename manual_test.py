@@ -8,6 +8,8 @@
 import altair
 import altair as altr
 import geopandas as gpd
+import matplotlib.pyplot
+import matplotlib.pyplot as mplt
 import numpy
 import numpy as npm
 import pandas

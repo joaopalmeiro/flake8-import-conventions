@@ -28,6 +28,7 @@ def generate_message(number: int, package_name: str, alias: Optional[str]) -> st
 name2asname: Dict[str, Optional[str]] = {
     "altair": "alt",
     "geopandas": None,
+    "matplotlib.pyplot": "plt",
     "numpy": "np",
     "pandas": "pd",
     "plotly.express": "px",
