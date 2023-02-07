@@ -35,6 +35,8 @@
 - Delete local tag: `git tag -d v0.0.1`
 - `import seaborn as sns`: https://seaborn.pydata.org/installing.html
 - Path: `/mnt/c/Users/johnn/Documents/GitHub/flake8-import-conventions`
+- https://import-as.github.io/
+- https://github.com/marcgibbons/flake8-datetime-import
 
 ## Snippets
 
@@ -68,4 +70,28 @@ class C(object):
     x = attr.ib(factory=list)
     # instead of
     # x = attr.ib(default=attr.Factory(list))
+```
+
+**`from X import ...` is not allowed. `X` must be imported as a module.** (from Marc Gibbons' [flake8-datetime-import](https://github.com/marcgibbons/flake8-datetime-import) plugin):
+
+```python
+ERRORS = {
+    "DTI100": (
+        "`from datetime import ...` is not allowed. `datetime` must be "
+        "imported as a module."
+    ),
+}
+
+
+class Visitor(ast.NodeVisitor):
+    def __init__(self):
+        self.problems = []
+
+    def visit_ImportFrom(self, node):
+        if node.module == "datetime":
+            self.problems.append((node.lineno, node.col_offset, "DTI100"))
+        if node.module == "time":
+            self.problems.append((node.lineno, node.col_offset, "DTI200"))
+
+        self.generic_visit(node)
 ```
