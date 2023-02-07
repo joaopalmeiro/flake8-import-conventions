@@ -71,6 +71,36 @@ def test_import_pandas(s):
     }
 
 
+# Plotly (plotly.express)
+@pytest.mark.parametrize(
+    "s",
+    (
+        "import plotly.express",
+        "import plotly.express as plpx",
+        "import plotly.express as Px",
+    ),
+)
+def test_import_plotly_express(s):
+    assert results(s) == {
+        "1:0: IC005 plotly.express should be imported as `import plotly.express as px`"
+    }
+
+
+# Plotly (plotly.graph_objects)
+@pytest.mark.parametrize(
+    "s",
+    (
+        "import plotly.graph_objects",
+        "import plotly.graph_objects as plgo",
+        "import plotly.graph_objects as Go",
+    ),
+)
+def test_import_plotly_graph_objects(s):
+    assert results(s) == {
+        "1:0: IC006 plotly.graph_objects should be imported as `import plotly.graph_objects as go`"
+    }
+
+
 # seaborn
 @pytest.mark.parametrize(
     "s",
@@ -78,5 +108,5 @@ def test_import_pandas(s):
 )
 def test_import_seaborn(s):
     assert results(s) == {
-        "1:0: IC005 seaborn should be imported as `import seaborn as sns`"
+        "1:0: IC007 seaborn should be imported as `import seaborn as sns`"
     }

@@ -32,9 +32,21 @@ from flake8_import_conventions.errors import generate_message
         ),
         (
             5,
+            "plotly.express",
+            "px",
+            "IC005 plotly.express should be imported as `import plotly.express as px`",
+        ),
+        (
+            6,
+            "plotly.graph_objects",
+            "go",
+            "IC006 plotly.graph_objects should be imported as `import plotly.graph_objects as go`",
+        ),
+        (
+            7,
             "seaborn",
             "sns",
-            "IC005 seaborn should be imported as `import seaborn as sns`",
+            "IC007 seaborn should be imported as `import seaborn as sns`",
         ),
     ],
 )

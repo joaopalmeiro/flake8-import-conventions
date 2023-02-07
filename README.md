@@ -20,13 +20,15 @@ pipenv install --dev flake8 flake8-import-conventions
 
 ## Flake8 codes
 
-| Package                                 | Code  | Description                                           |
-| --------------------------------------- | ----- | ----------------------------------------------------- |
-| [Altair](https://altair-viz.github.io/) | IC001 | altair should be imported as `import altair as alt`   |
-| [GeoPandas](https://geopandas.org/)     | IC002 | geopandas should be imported as `import geopandas`    |
-| [NumPy](https://numpy.org/)             | IC003 | numpy should be imported as `import numpy as np`      |
-| [pandas](https://pandas.pydata.org/)    | IC004 | pandas should be imported as `import pandas as pd`    |
-| [seaborn](https://seaborn.pydata.org/)  | IC005 | seaborn should be imported as `import seaborn as sns` |
+| Package                                 | Code  | Description                                                                    |
+| --------------------------------------- | ----- | ------------------------------------------------------------------------------ |
+| [Altair](https://altair-viz.github.io/) | IC001 | altair should be imported as `import altair as alt`                            |
+| [GeoPandas](https://geopandas.org/)     | IC002 | geopandas should be imported as `import geopandas`                             |
+| [NumPy](https://numpy.org/)             | IC003 | numpy should be imported as `import numpy as np`                               |
+| [pandas](https://pandas.pydata.org/)    | IC004 | pandas should be imported as `import pandas as pd`                             |
+| [Plotly](https://plotly.com/python/)    | IC005 | plotly.express should be imported as `import plotly.express as px`             |
+| [Plotly](https://plotly.com/python/)    | IC006 | plotly.graph_objects should be imported as `import plotly.graph_objects as go` |
+| [seaborn](https://seaborn.pydata.org/)  | IC007 | seaborn should be imported as `import seaborn as sns`                          |
 
 ## Development
 
@@ -55,6 +57,8 @@ Copy the output of the following script and paste it in the [Flake8 codes](#flak
 ```bash
 python gen_table.py
 ```
+
+If changes are not reflected in VS Code after changing something in the package, close it and open it again.
 
 ## Deployment
 

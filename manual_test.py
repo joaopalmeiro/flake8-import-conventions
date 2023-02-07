@@ -12,5 +12,9 @@ import numpy
 import numpy as npm
 import pandas
 import pandas as pds
+import plotly.express
+import plotly.express as plpx
+import plotly.graph_objects
+import plotly.graph_objects as plgo
 import seaborn
 import seaborn as sbn

@@ -30,6 +30,8 @@ name2asname: Dict[str, Optional[str]] = {
     "geopandas": None,
     "numpy": "np",
     "pandas": "pd",
+    "plotly.express": "px",
+    "plotly.graph_objects": "go",
     "seaborn": "sns",
 }
 

@@ -19,6 +19,8 @@ name2stylized: Dict[str, str] = {
     "geopandas": "GeoPandas",
     "numpy": "NumPy",
     "pandas": "pandas",
+    "plotly.express": "Plotly",
+    "plotly.graph_objects": "Plotly",
     "seaborn": "seaborn",
 }
 name2url: Dict[str, str] = {
@@ -26,6 +28,8 @@ name2url: Dict[str, str] = {
     "geopandas": "https://geopandas.org/",
     "numpy": "https://numpy.org/",
     "pandas": "https://pandas.pydata.org/",
+    "plotly.express": "https://plotly.com/python/",
+    "plotly.graph_objects": "https://plotly.com/python/",
     "seaborn": "https://seaborn.pydata.org/",
 }
 
