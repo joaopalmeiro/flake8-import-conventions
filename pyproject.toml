@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flake8-import-conventions"
-version = "0.0.1"
+version = "0.1.0"
 description = "An opinionated plugin for Flake8 on how certain packages should be imported or aliased."
 authors = ["João Palmeiro <joaopalmeiro@proton.me>"]
 license = "MIT"

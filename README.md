@@ -79,6 +79,8 @@ or
 poetry version patch
 ```
 
+Commit the change in the `pyproject.toml` file.
+
 ```bash
 git tag
 ```
