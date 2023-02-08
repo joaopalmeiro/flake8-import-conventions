@@ -25,11 +25,12 @@ pipenv install --dev flake8 flake8-import-conventions
 | [Altair](https://altair-viz.github.io/) | IC001 | altair should be imported as `import altair as alt`                            |
 | [GeoPandas](https://geopandas.org/)     | IC002 | geopandas should be imported as `import geopandas`                             |
 | [Matplotlib](https://matplotlib.org/)   | IC003 | matplotlib.pyplot should be imported as `import matplotlib.pyplot as plt`      |
-| [NumPy](https://numpy.org/)             | IC004 | numpy should be imported as `import numpy as np`                               |
-| [pandas](https://pandas.pydata.org/)    | IC005 | pandas should be imported as `import pandas as pd`                             |
-| [Plotly](https://plotly.com/python/)    | IC006 | plotly.express should be imported as `import plotly.express as px`             |
-| [Plotly](https://plotly.com/python/)    | IC007 | plotly.graph_objects should be imported as `import plotly.graph_objects as go` |
-| [seaborn](https://seaborn.pydata.org/)  | IC008 | seaborn should be imported as `import seaborn as sns`                          |
+| [NetworkX](https://networkx.org/)       | IC004 | networkx should be imported as `import networkx as nx`                         |
+| [NumPy](https://numpy.org/)             | IC005 | numpy should be imported as `import numpy as np`                               |
+| [pandas](https://pandas.pydata.org/)    | IC006 | pandas should be imported as `import pandas as pd`                             |
+| [Plotly](https://plotly.com/python/)    | IC007 | plotly.express should be imported as `import plotly.express as px`             |
+| [Plotly](https://plotly.com/python/)    | IC008 | plotly.graph_objects should be imported as `import plotly.graph_objects as go` |
+| [seaborn](https://seaborn.pydata.org/)  | IC009 | seaborn should be imported as `import seaborn as sns`                          |
 
 ## Development
 

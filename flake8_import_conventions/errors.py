@@ -29,6 +29,7 @@ name2asname: Dict[str, Optional[str]] = {
     "altair": "alt",
     "geopandas": None,
     "matplotlib.pyplot": "plt",
+    "networkx": "nx",
     "numpy": "np",
     "pandas": "pd",
     "plotly.express": "px",

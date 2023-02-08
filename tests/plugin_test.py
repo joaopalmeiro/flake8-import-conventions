@@ -66,13 +66,24 @@ def test_import_matplotlib_pyplot(s):
     }
 
 
+# NetworkX
+@pytest.mark.parametrize(
+    "s",
+    ("import networkx", "import networkx as nex", "import networkx as Nx"),
+)
+def test_import_networkx(s):
+    assert results(s) == {
+        "1:0: IC004 networkx should be imported as `import networkx as nx`"
+    }
+
+
 # NumPy
 @pytest.mark.parametrize(
     "s",
     ("import numpy", "import numpy as npp", "import numpy as Np"),
 )
 def test_import_numpy(s):
-    assert results(s) == {"1:0: IC004 numpy should be imported as `import numpy as np`"}
+    assert results(s) == {"1:0: IC005 numpy should be imported as `import numpy as np`"}
 
 
 # pandas
@@ -82,7 +93,7 @@ def test_import_numpy(s):
 )
 def test_import_pandas(s):
     assert results(s) == {
-        "1:0: IC005 pandas should be imported as `import pandas as pd`"
+        "1:0: IC006 pandas should be imported as `import pandas as pd`"
     }
 
 
@@ -97,7 +108,7 @@ def test_import_pandas(s):
 )
 def test_import_plotly_express(s):
     assert results(s) == {
-        "1:0: IC006 plotly.express should be imported as `import plotly.express as px`"
+        "1:0: IC007 plotly.express should be imported as `import plotly.express as px`"
     }
 
 
@@ -112,7 +123,7 @@ def test_import_plotly_express(s):
 )
 def test_import_plotly_graph_objects(s):
     assert results(s) == {
-        "1:0: IC007 plotly.graph_objects should be imported as `import plotly.graph_objects as go`"
+        "1:0: IC008 plotly.graph_objects should be imported as `import plotly.graph_objects as go`"
     }
 
 
@@ -123,5 +134,5 @@ def test_import_plotly_graph_objects(s):
 )
 def test_import_seaborn(s):
     assert results(s) == {
-        "1:0: IC008 seaborn should be imported as `import seaborn as sns`"
+        "1:0: IC009 seaborn should be imported as `import seaborn as sns`"
     }

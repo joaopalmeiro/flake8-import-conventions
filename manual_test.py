@@ -10,6 +10,8 @@ import altair as altr
 import geopandas as gpd
 import matplotlib.pyplot
 import matplotlib.pyplot as mplt
+import networkx
+import networkx as nex
 import numpy
 import numpy as npm
 import pandas
