@@ -60,6 +60,12 @@ from flake8_import_conventions.errors import generate_message
             "sns",
             "IC009 seaborn should be imported as `import seaborn as sns`",
         ),
+        (
+            10,
+            "statsmodels.api",
+            "sm",
+            "IC010 statsmodels.api should be imported as `import statsmodels.api as sm`",
+        ),
     ],
 )
 def test_generate_message(number, package_number, alias, expected):

@@ -24,6 +24,7 @@ name2stylized: Dict[str, str] = {
     "plotly.express": "Plotly",
     "plotly.graph_objects": "Plotly",
     "seaborn": "seaborn",
+    "statsmodels.api": "statsmodels",
 }
 name2url: Dict[str, str] = {
     "altair": "https://altair-viz.github.io/",
@@ -35,6 +36,7 @@ name2url: Dict[str, str] = {
     "plotly.express": "https://plotly.com/python/",
     "plotly.graph_objects": "https://plotly.com/python/",
     "seaborn": "https://seaborn.pydata.org/",
+    "statsmodels.api": "https://www.statsmodels.org/",
 }
 
 if __name__ == "__main__":

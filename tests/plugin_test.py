@@ -136,3 +136,18 @@ def test_import_seaborn(s):
     assert results(s) == {
         "1:0: IC009 seaborn should be imported as `import seaborn as sns`"
     }
+
+
+# statsmodels (statsmodels.api)
+@pytest.mark.parametrize(
+    "s",
+    (
+        "import statsmodels.api",
+        "import statsmodels.api as sma",
+        "import statsmodels.api as Sm",
+    ),
+)
+def test_import_statsmodels_api(s):
+    assert results(s) == {
+        "1:0: IC010 statsmodels.api should be imported as `import statsmodels.api as sm`"
+    }

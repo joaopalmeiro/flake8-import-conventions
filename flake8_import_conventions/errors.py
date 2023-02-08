@@ -35,6 +35,7 @@ name2asname: Dict[str, Optional[str]] = {
     "plotly.express": "px",
     "plotly.graph_objects": "go",
     "seaborn": "sns",
+    "statsmodels.api": "sm",
 }
 
 name2message: Dict[str, str] = {
