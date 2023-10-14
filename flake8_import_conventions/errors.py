@@ -24,7 +24,6 @@ def generate_message(number: int, package_name: str, alias: Optional[str]) -> st
 
 # https://github.com/charliermarsh/ruff/blob/v0.0.241/src/rules/flake8_import_conventions/settings.rs
 # https://github.com/geopandas/geopandas/issues/716
-# Alphabetical order:
 name2asname: Dict[str, Optional[str]] = {
     "altair": "alt",
     "geopandas": None,
@@ -36,6 +35,10 @@ name2asname: Dict[str, Optional[str]] = {
     "plotly.graph_objects": "go",
     "seaborn": "sns",
     "statsmodels.api": "sm",
+    "datetime": "dt",
+    "tensorflow": "tf",
+    "pickle": "pkl",
+    "multiprocessing": "mp",
 }
 
 name2message: Dict[str, str] = {

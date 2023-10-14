@@ -25,6 +25,10 @@ name2stylized: Dict[str, str] = {
     "plotly.graph_objects": "Plotly",
     "seaborn": "seaborn",
     "statsmodels.api": "statsmodels",
+    "datetime": "datetime",
+    "tensorflow": "TensorFlow",
+    "pickle": "pickle",
+    "multiprocessing": "multiprocessing",
 }
 name2url: Dict[str, str] = {
     "altair": "https://altair-viz.github.io/",
@@ -37,6 +41,10 @@ name2url: Dict[str, str] = {
     "plotly.graph_objects": "https://plotly.com/python/",
     "seaborn": "https://seaborn.pydata.org/",
     "statsmodels.api": "https://www.statsmodels.org/",
+    "datetime": "https://docs.python.org/3/library/datetime.html",
+    "tensorflow": "https://www.tensorflow.org/",
+    "pickle": "https://docs.python.org/3/library/pickle.html",
+    "multiprocessing": "https://docs.python.org/3/library/multiprocessing.html",
 }
 
 if __name__ == "__main__":
