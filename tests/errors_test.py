@@ -66,6 +66,30 @@ from flake8_import_conventions.errors import generate_message
             "sm",
             "IC010 statsmodels.api should be imported as `import statsmodels.api as sm`",
         ),
+        (
+            11,
+            "datetime",
+            "dt",
+            "IC011 datetime should be imported as `import datetime as dt`",
+        ),
+        (
+            12,
+            "tensorflow",
+            "tf",
+            "IC012 tensorflow should be imported as `import tensorflow as tf`",
+        ),
+        (
+            13,
+            "pickle",
+            "pkl",
+            "IC013 pickle should be imported as `import pickle as pkl`",
+        ),
+        (
+            14,
+            "multiprocessing",
+            "mp",
+            "IC014 multiprocessing should be imported as `import multiprocessing as mp`",
+        )
     ],
 )
 def test_generate_message(number, package_number, alias, expected):

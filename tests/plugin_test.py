@@ -151,3 +151,27 @@ def test_import_statsmodels_api(s):
     assert results(s) == {
         "1:0: IC010 statsmodels.api should be imported as `import statsmodels.api as sm`"
     }
+
+
+# Datetime
+@pytest.mark.parametrize("s", ("import datetime", "import datetime as dtm"))
+def test_import_datetime(s):
+    assert results(s) == {"1:0: IC011 datetime should be imported as `import datetime as dt`"}
+
+
+# Tensorflow
+@pytest.mark.parametrize("s", ("import tensorflow", "import tensorflow as tfl"))
+def test_import_tensorflow(s):
+    assert results(s) == {"1:0: IC012 tensorflow should be imported as `import tensorflow as tf`"}
+
+
+# Pickle
+@pytest.mark.parametrize("s", ("import pickle", "import pickle as pk"))
+def test_import_pickle(s):
+    assert results(s) == {"1:0: IC013 pickle should be imported as `import pickle as pkl`"}
+
+
+# Multiprocessing
+@pytest.mark.parametrize("s", ("import multiprocessing", "import multiprocessing as mpc"))
+def test_import_multiprocessing(s):
+    assert results(s) == {"1:0: IC014 multiprocessing should be imported as `import multiprocessing as mp`"}
